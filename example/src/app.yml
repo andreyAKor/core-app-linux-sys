@@ -27,7 +27,7 @@ micro:
   broker: "nats"
   brokerAddress: "0.0.0.0:4222"
 
-  # Данные для работы с траyспортом
+  # Данные для работы с транспортом
   transport: "nats"
   transportAddress: "0.0.0.0:4222"
 

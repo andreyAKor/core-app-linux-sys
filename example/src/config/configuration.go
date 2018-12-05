@@ -1,7 +1,7 @@
 package config
 
 import (
-	config "github.com/andreyAKor/core-app-linux-sy/config"
+	config "github.com/andreyAKor/core-app-linux-sys/config"
 )
 
 type Configuration struct {

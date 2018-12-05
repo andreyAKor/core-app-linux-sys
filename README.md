@@ -13,21 +13,10 @@ Install
 Example
 -------
 
-```go
-package main
+See folder with example app code.
 
-import (
-	core "github.com/andreyAKor/core-app-linux-sys"
-	log "github.com/sirupsen/logrus"
-)
+For fast build example app code, you must install [GB](https://getgb.io):
 
-func main() {
-	// Init service
-	service := core.NewService("etherbot.geth.conf", new(config.Configuration), new(App))
-
-	// Start service
-	if err := service.Run(); err != nil {
-		log.Fatal(err)
-	}
-}
+```
+go get github.com/constabulary/gb/...
 ```
