@@ -20,3 +20,14 @@ For fast build example app code, you must install [GB](https://getgb.io):
 ```
 go get github.com/constabulary/gb/...
 ```
+
+go to example folder:
+
+```
+cd ~/go-lang-projects/core-app-linux-sys/example/
+```
+
+run vendor fetches:
+```
+
+```
