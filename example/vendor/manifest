@@ -8,6 +8,13 @@
 			"branch": "master"
 		},
 		{
+			"importpath": "github.com/andreyAKor/core-app-linux-sys/example",
+			"repository": "https://github.com/andreyAKor/core-app-linux-sys",
+			"revision": "67b57eae21cb02b7c2adb7bdb12ee2852adb0e36",
+			"branch": "master",
+			"path": "/example"
+		},
+		{
 			"importpath": "github.com/armon/go-metrics",
 			"repository": "https://github.com/armon/go-metrics",
 			"revision": "f0300d1749da6fa982027e449ec0c7a145510c3c",

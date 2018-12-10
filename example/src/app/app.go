@@ -4,7 +4,7 @@ import (
 	"os"
 	"time"
 
-	"app/config"
+	"github.com/andreyAKor/core-app-linux-sys/example/src/app/config"
 
 	// Указываем свои каналы связи
 	_ "github.com/micro/go-plugins/broker/nats"
