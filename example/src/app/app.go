@@ -22,7 +22,6 @@ type App struct {
 
 	configuration *config.Configuration
 	service       micro.Service
-	components    *components.Components
 }
 
 // Инициализация micro

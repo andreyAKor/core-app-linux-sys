@@ -9,7 +9,7 @@ import (
 
 func main() {
 	// Init service
-	service := core.NewService("app.conf", new(config.Configuration), new(App))
+	service := core.NewService("app", new(config.Configuration), new(App))
 
 	// Start service
 	if err := service.Run(); err != nil {

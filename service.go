@@ -78,7 +78,9 @@ func (s *Service) initConfiguration(configFlag *string) error {
 	viper.SetConfigName(s.configName)
 
 	// По умолчанию конфиг лежит тамже, где и приложение
-	viper.AddConfigPath(*configFlag)
+	if configFlag != nil {
+		viper.AddConfigPath(*configFlag)
+	}
 
 	// by https://stackoverflow.com/questions/18537257/how-to-get-the-directory-of-the-currently-running-file
 	folderPath, err := osext.ExecutableFolder()
@@ -147,7 +149,7 @@ func (s *Service) initService(svcFlag *string) error {
 	}()
 
 	// Управление сервисом
-	if len(*svcFlag) != 0 {
+	if svcFlag != nil && len(*svcFlag) != 0 {
 		err := service.Control(srv, *svcFlag)
 		if err != nil {
 			log.Info("Valid actions: ", service.ControlAction)
@@ -171,12 +173,21 @@ func (s *Service) initService(svcFlag *string) error {
 
 // Инициализация аргументов приложения
 func (s *Service) initFlags() (*string, *string) {
+	var (
+		svcFlag    *string
+		configFlag *string
+	)
+
 	// Управление системные сервис-менеджером (install/uninstall/start/stop)
-	svcFlag := flag.String("service", "", "Control the system service.")
+	if flag.Lookup("service") == nil {
+		svcFlag = flag.String("service", "", "Control the system service.")
+	}
 
 	// Путь к конфиг файлу
 	// По умолчанию находится тамже, где и само приложение
-	configFlag := flag.String("config", ".", "Path to the config file (default \".\").")
+	if flag.Lookup("config") == nil {
+		configFlag = flag.String("config", ".", "Path to the config file (default \".\").")
+	}
 
 	flag.Parse()
 
