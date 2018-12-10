@@ -52,7 +52,7 @@ func (s *Service) Run() error {
 	// Смотрим наличие менеджеров сервисов в ОС
 	// Если хоть что-то есть, то запускаем приложение через системный менеджер сервисов
 	// иначе приложение будет работать как обычная программа
-	if service.ChosenSystem() != nil {
+	if svcFlag != nil && len(*svcFlag) != 0 && service.ChosenSystem() != nil {
 		log.Info("Service system is available: ", service.AvailableSystems())
 
 		// Инициализация инстанса сервиса
