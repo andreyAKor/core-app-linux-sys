@@ -16,6 +16,7 @@
 .glide/
 
 # Project-local GB vendors/cache
+/example/src/app/app
 /example/pkg/*
 /example/vendor/*
 !/example/vendor/manifest
