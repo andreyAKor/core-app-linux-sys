@@ -122,16 +122,16 @@ func (s *Service) initService(svcFlag *string) error {
 	}
 
 	// Создание экземпляра сервиса
-	s, err := service.New(prg, svcConfig)
+	srv, err := service.New(prg, svcConfig)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	prg.service = s
+	prg.service = srv
 
 	// Инициализация системного логгера
 	errs := make(chan error, 5)
-	logger, err = s.Logger(errs)
+	logger, err = srv.Logger(errs)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -148,7 +148,7 @@ func (s *Service) initService(svcFlag *string) error {
 
 	// Управление сервисом
 	if len(*svcFlag) != 0 {
-		err := service.Control(s, *svcFlag)
+		err := service.Control(srv, *svcFlag)
 		if err != nil {
 			log.Info("Valid actions: ", service.ControlAction)
 			log.Fatal(err)
