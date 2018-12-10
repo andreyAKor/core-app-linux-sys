@@ -15,7 +15,7 @@ Example
 
 See folder with example app code.
 
-For fast build example app code, you must install [GB](https://getgb.io):
+For fast build example app code, you must install [GB](https://github.com/constabulary/gb/):
 
 ```
 go get github.com/constabulary/gb/...
@@ -29,5 +29,10 @@ cd ~/go-lang-projects/core-app-linux-sys/example/
 
 run vendor fetches:
 ```
+gb vendor restore
+```
 
+and run build app:
+```
+gb build
 ```

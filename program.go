@@ -1,7 +1,7 @@
 package core
 
 import (
-	"config"
+	"core/config"
 
 	"github.com/kardianos/service"
 	log "github.com/sirupsen/logrus"

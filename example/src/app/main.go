@@ -1,7 +1,7 @@
 package main
 
 import (
-	"config"
+	"app/config"
 
 	core "github.com/andreyAKor/core-app-linux-sys"
 	log "github.com/sirupsen/logrus"

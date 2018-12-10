@@ -4,7 +4,7 @@ import (
 	"os"
 	"time"
 
-	"config"
+	"app/config"
 
 	// Указываем свои каналы связи
 	_ "github.com/micro/go-plugins/broker/nats"

@@ -4,7 +4,7 @@
 *.dll
 *.so
 *.dylib
-bin/*
+/example/bin/*
 
 # Test binary, build with `go test -c`
 *.test
@@ -16,6 +16,6 @@ bin/*
 .glide/
 
 # Project-local GB vendors/cache
-pkg/*
-vendor/*
-!vendor/manifest
+/example/pkg/*
+/example/vendor/*
+!/example/vendor/manifest
