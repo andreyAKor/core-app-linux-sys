@@ -53,6 +53,12 @@
 			"path": "/watch"
 		},
 		{
+			"importpath": "github.com/hashicorp/errwrap",
+			"repository": "https://github.com/hashicorp/errwrap",
+			"revision": "8a6fb523712970c966eefc6b39ed2c5e74880354",
+			"branch": "master"
+		},
+		{
 			"importpath": "github.com/hashicorp/go-cleanhttp",
 			"repository": "https://github.com/hashicorp/go-cleanhttp",
 			"revision": "e8ab9daed8d1ddd2d3c4efba338fe2eeae2e4f18",
@@ -65,9 +71,28 @@
 			"branch": "master"
 		},
 		{
+			"importpath": "github.com/hashicorp/go-msgpack/codec",
+			"repository": "https://github.com/hashicorp/go-msgpack",
+			"revision": "fa3f63826f7c23912c15263591e65d54d080b458",
+			"branch": "master",
+			"path": "/codec"
+		},
+		{
+			"importpath": "github.com/hashicorp/go-multierror",
+			"repository": "https://github.com/hashicorp/go-multierror",
+			"revision": "886a7fbe3eb1c874d46f623bfa70af45f425b3d1",
+			"branch": "master"
+		},
+		{
 			"importpath": "github.com/hashicorp/go-rootcerts",
 			"repository": "https://github.com/hashicorp/go-rootcerts",
 			"revision": "6bb64b370b90e7ef1fa532be9e591a81c3493e00",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/hashicorp/go-sockaddr",
+			"repository": "https://github.com/hashicorp/go-sockaddr",
+			"revision": "6d291a969b86c4b633730bfc6b8b9d64c3aafed9",
 			"branch": "master"
 		},
 		{
@@ -81,6 +106,12 @@
 			"importpath": "github.com/hashicorp/hcl",
 			"repository": "https://github.com/hashicorp/hcl",
 			"revision": "65a6292f0157eff210d03ed1bf6c59b190b8b906",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/hashicorp/memberlist",
+			"repository": "https://github.com/hashicorp/memberlist",
+			"revision": "2072f3a3ff4b7b3d830be77678d5d4b978362bc4",
 			"branch": "master"
 		},
 		{
@@ -232,6 +263,12 @@
 			"importpath": "github.com/pkg/errors",
 			"repository": "https://github.com/pkg/errors",
 			"revision": "059132a15dd08d6704c67711dae0cf35ab991756",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/sean-/seed",
+			"repository": "https://github.com/sean-/seed",
+			"revision": "e2103e2c35297fb7e17febb81e49b312087a2372",
 			"branch": "master"
 		},
 		{
