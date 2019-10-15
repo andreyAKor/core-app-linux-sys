@@ -17,6 +17,9 @@ logging:
   # Уровень логгирования, варианты: debug, info, warning, error, fatal и panic
   level: "debug"
 
+  # Показывать информацию о в каком месте был вызван лог
+  IsReportCaller: true
+
 # Данные для инициализации сервиса
 micro:
   # Данные для работы с реестром
